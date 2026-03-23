@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://hr930.github.io/esm-square-technologies-website/sitemap.xml
+Sitemap: https://esm-square-technologies-website.com/sitemap.xml
