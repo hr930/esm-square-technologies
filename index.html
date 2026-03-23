@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESM SQUARE TECHNOLOGIES PVT LTD</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>ESM SQUARE TECHNOLOGIES PVT LTD</h1>
+      <p>Innovate. Scale. Transform.</p>
+      <p id="clock" aria-live="polite">--:--:--</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-label="Hero section">
+      <h2>Welcome to ESM Square Technologies</h2>
+      <p>Building intelligent, secure and scalable solutions for your business growth.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </section>
+
+    <section id="services" class="grid" aria-label="Services">
+      <article>
+        <h3>Web Development</h3>
+        <p>Modern websites, PWAs and web apps with best frontend and backend practices.</p>
+      </article>
+      <article>
+        <h3>Cloud Engineering</h3>
+        <p>Serverless, containerized and infrastructure-as-code architecture for high availability.</p>
+      </article>
+      <article>
+        <h3>AI & Automation</h3>
+        <p>AI-driven automation, chatbots and analytics to accelerate decisions and savings.</p>
+      </article>
+    </section>
+
+    <section id="realtime" class="realtime" aria-label="Realtime analytics">
+      <h2>Live Analytics</h2>
+      <p>Updating every second with your live operational facts.</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h4>Active Visitors</h4>
+          <p id="stat-visitors">0</p>
+        </div>
+        <div class="stat-card">
+          <h4>Open Support Tickets</h4>
+          <p id="stat-tickets">0</p>
+        </div>
+        <div class="stat-card">
+          <h4>Server Response (ms)</h4>
+          <p id="stat-response">0</p>
+        </div>
+      </div>
+      <div class="updates">
+        <h4>Live Stream</h4>
+        <ul id="liveUpdates" aria-live="polite" class="updates-list"></ul>
+      </div>
+    </section>
+
+    <section class="contact" aria-label="Contact us">
+      <h2>Contact Us</h2>
+      <p>Send a message and we’ll respond within 24 hours.</p>
+      <form id="contactForm">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="formStatus" class="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> ESM SQUARE TECHNOLOGIES PVT LTD</p>
+    </div>
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
