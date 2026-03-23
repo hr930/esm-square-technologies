@@ -1,0 +1,22 @@
+{
+  "name": "esm-square-technologies-website",
+  "version": "1.0.0",
+  "description": "Realtime website for ESM SQUARE TECHNOLOGIES PVT LTD with live backend feed",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "deploy": "npx gh-pages -d ."
+  },
+  "keywords": ["realtime", "socket.io", "express", "esm-sq", "company"],
+  "author": "ESM SQUARE TECHNOLOGIES PVT LTD",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "gh-pages": "^5.0.0"
+  }
+}
