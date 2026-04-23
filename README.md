@@ -11,6 +11,21 @@ This project is a realtime website for ESM SQUARE TECHNOLOGIES PVT LTD built wit
 2. `npm start`
 3. Open `http://localhost:3000`
 
+## Playwright automation tests
+
+This project now includes Playwright end-to-end tests for the ESM SQUARE TECHNOLOGIES website.
+
+1. Install dependencies: `npm install`
+2. Run the tests: `npm run test:e2e`
+3. Run tests in headed mode: `npm run test:e2e:headed`
+4. View the HTML report: `npm run test:e2e:report`
+
+The automation covers:
+- page title and hero section validation
+- live stats visibility
+- contact form submission
+- health endpoint availability
+
 ## Deploy to GitHub Pages (recommended so Google can index)
 
 1. Create GitHub repo (e.g., `esm-square-technologies-website`).
