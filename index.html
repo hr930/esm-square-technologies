@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ESM SQUARE TECHNOLOGIES PVT LTD - Realtime web, cloud, and AI solutions" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="ESM Square Technologies, Web Development, Cloud, AI, Realtime" />
+  <meta property="og:title" content="ESM SQUARE TECHNOLOGIES PVT LTD" />
+  <meta property="og:description" content="Realtime company website with live analytics and backend integration." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://esm-square-technologies-website.com/" />
+  <meta property="og:image" content="https://esm-square-technologies-website.com/logo.svg" />
+  <link rel="canonical" href="https://esm-square-technologies-website.com/" />
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <title>ESM SQUARE TECHNOLOGIES PVT LTD</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container logo-row">
+      <img id="brandLogo" src="logo.svg" alt="ESM SQUARE TECHNOLOGIES logo" width="140" height="42" />
+      <div class="top-text">
+        <h1>ESM SQUARE TECHNOLOGIES PVT LTD</h1>
+        <p>Innovate. Scale. Transform.</p>
+      </div>
+      <p id="clock" aria-live="polite" class="clock">--:--:--</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-label="Hero section">
+      <h2>Welcome to ESM Square Technologies</h2>
+      <p>Building intelligent, secure and scalable solutions for your business growth.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </section>
+
+    <section id="services" class="grid" aria-label="Services">
+      <article>
+        <h3>Web Development</h3>
+        <p>Modern websites, PWAs and web apps built with clean code, responsive design, and strong performance.</p>
+      </article>
+      <article>
+        <h3>Cloud Engineering</h3>
+        <p>Serverless platforms, container orchestration, and infrastructure-as-code for scalability and resilience.</p>
+      </article>
+      <article>
+        <h3>AI & Automation</h3>
+        <p>Intelligent automation, ML pipelines, and chatbot solutions to boost productivity and decision-making.</p>
+      </article>
+      <article>
+        <h3>Digital Transformation</h3>
+        <p>Business process modernization, systems integration, and secure digital platforms for growth.</p>
+      </article>
+    </section>
+
+    <section id="portfolio" class="portfolio" aria-label="Portfolio">
+      <div class="section-header">
+        <h2>Portfolio Highlights</h2>
+        <p>Selected case studies that show how ESM SQUARE TECHNOLOGIES delivers measurable business outcomes.</p>
+      </div>
+      <div class="grid portfolio-grid">
+        <article>
+          <h3>Smart Retail Platform</h3>
+          <p>Developed an e-commerce and inventory intelligence system that increased order throughput by 38%.</p>
+        </article>
+        <article>
+          <h3>Cloud Migration</h3>
+          <p>Moved a legacy enterprise application to a secure cloud architecture with zero downtime.</p>
+        </article>
+        <article>
+          <h3>AI Insights Dashboard</h3>
+          <p>Built a real-time analytics dashboard that turned operational data into actionable insights.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="team" class="team" aria-label="Team">
+      <div class="section-header">
+        <h2>Meet the Team</h2>
+        <p>Experienced leaders and engineers driving solutions for modern businesses.</p>
+      </div>
+      <div class="grid team-grid">
+        <article>
+          <h3>Priya Sharma</h3>
+          <p>Founder & CEO — Strategy, partnerships, and enterprise growth.</p>
+        </article>
+        <article>
+          <h3>Rohit Kumar</h3>
+          <p>CTO — Cloud architecture, DevOps, and secure engineering practices.</p>
+        </article>
+        <article>
+          <h3>Neha Reddy</h3>
+          <p>Head of Product — Product design, UX, and customer success.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="realtime" class="realtime" aria-label="Realtime analytics">
+      <h2>Live Analytics</h2>
+      <p>Updating every second with your live operational facts.</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h4>Active Visitors</h4>
+          <p id="stat-visitors">0</p>
+        </div>
+        <div class="stat-card">
+          <h4>Open Support Tickets</h4>
+          <p id="stat-tickets">0</p>
+        </div>
+        <div class="stat-card">
+          <h4>Server Response (ms)</h4>
+          <p id="stat-response">0</p>
+        </div>
+      </div>
+      <div class="updates">
+        <h4>Live Stream</h4>
+        <ul id="liveUpdates" aria-live="polite" class="updates-list"></ul>
+      </div>
+    </section>
+
+    <section class="contact" aria-label="Contact us">
+      <h2>Contact Us</h2>
+      <p>Send a message and we’ll respond within 24 hours.</p>
+      <div class="contact-info">
+        <h3>Office Address</h3>
+        <p>ESM SQUARE TECHNOLOGIES PVT LTD<br>
+        123 Business Park, Tech Tower<br>
+        Hyderabad, Telangana 500001<br>
+        India</p>
+        <p><strong>Phone:</strong> +91 98765 43210<br>
+        <strong>Email:</strong> info@esm-square-technologies.com</p>
+      </div>
+      <form id="contactForm">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="formStatus" class="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> ESM SQUARE TECHNOLOGIES PVT LTD</p>
+    </div>
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
